@@ -1,0 +1,129 @@
+# Binaries
+cli-proxy-api
+cliproxy
+proxypilot-linux
+proxypilot-darwin
+proxypilot-windows
+*.exe
+
+# Configuration
+config.yaml
+.env
+render.yaml
+
+# Generated content
+bin/*
+logs/*
+conv/*
+temp/*
+refs/*
+
+# Storage backends
+pgstore/*
+gitstore/*
+objectstore/*
+
+# Static assets
+static/*
+!static/icon.png
+!static/icon.ico
+test/
+dist/*
+.proxypilot/*
+memory/*
+
+# Authentication data
+auths/*
+!auths/.gitkeep
+
+# Documentation
+docs/*
+!docs/claude-code-local-proxy.md
+!docs/cursor-ide.md
+!docs/compat-matrix.md
+!docs/hindsight.md
+!docs/desktop-ui-spec.md
+!docs/windows-ui-spec.md
+!docs/memory.md
+!docs/proxypilot.md
+!docs/agentic-harness-demo.md
+!docs/long-context-features.md
+!docs/desktop-app-build-process.md
+!docs/cli.md
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+
+# Tooling metadata
+.vscode/*
+.worktrees/
+.codex/*
+.claude/*
+.gemini/*
+.serena/*
+.agent/*
+.agents/*
+.opencode/*
+.idea/*
+.beads/*
+.bmad/*
+_bmad/*
+_bmad-output/*
+.mcp/*
+.cursor/*
+
+# Local artifacts
+claude-progress.txt
+feature_list.json
+tui-snapshot*.txt
+tui-ttyd.png
+
+# Local settings (user-specific)
+*.local.json
+*.local.yaml
+*.local.toml
+
+# macOS
+.DS_Store
+._*
+
+# Windows artifacts
+nul
+Thumbs.db
+desktop.ini
+
+# Backup/temp files
+*~
+*.bak
+*.tmp
+*.swp
+*.orig
+*.proxypilot-backup
+
+# Test scripts
+*.ahk
+tray_click_log.txt
+
+# Logs
+*.log
+*_out.txt
+
+# Added by Gemini CLI fix
+node_modules/
+dist/
+.turbo/
+build/
+
+# Local files
+PLAN-*.md
+config-debug.yaml
+.wix/
+test_results.txt
+test_results_full.txt
+tmpclaude-*
+
+# Opencode
+.beads/
+.opencode/
+.cli-proxy-api/
+.venv/

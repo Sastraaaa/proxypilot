@@ -1,0 +1,40 @@
+{
+  "FixedFileInfo": {
+    "FileVersion": {
+      "Major": 0,
+      "Minor": 3,
+      "Patch": 0,
+      "Build": 0
+    },
+    "ProductVersion": {
+      "Major": 0,
+      "Minor": 3,
+      "Patch": 0,
+      "Build": 0
+    },
+    "FileFlagsMask": "3f",
+    "FileFlags ": "00",
+    "FileOS": "040004",
+    "FileType": "01",
+    "FileSubType": "00"
+  },
+  "StringFileInfo": {
+    "Comments": "Local AI Proxy with Embedded Engine",
+    "CompanyName": "ProxyPilot",
+    "FileDescription": "ProxyPilot - Single Binary Desktop App",
+    "FileVersion": "0.3.0",
+    "InternalName": "ProxyPilot",
+    "LegalCopyright": "MIT License",
+    "OriginalFilename": "ProxyPilot.exe",
+    "ProductName": "ProxyPilot",
+    "ProductVersion": "0.3.0"
+  },
+  "VarFileInfo": {
+    "Translation": {
+      "LangID": "0409",
+      "CharsetID": "04B0"
+    }
+  },
+  "IconPath": "../../static/icon.ico",
+  "ManifestPath": ""
+}
