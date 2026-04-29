@@ -540,8 +540,7 @@ func main() {
 				return
 			}
 			if errCommit := gitStoreInst.PersistConfig(context.Background()); errCommit != nil {
-				log.Errorf("failed to commit initial git-backed config: %v", errCommit)
-				return
+				log.Warnf("failed to commit initial git-backed config (will retry later): %v", errCommit)
 			}
 			log.Infof("git-backed config initialized from template: %s", configFilePath)
 		} else if statErr != nil {
