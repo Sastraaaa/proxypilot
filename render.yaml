@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: proxypilot
+    env: go
+    buildCommand: go build -o cli-proxy-api ./cmd/server
+    startCommand: ./cli-proxy-api
+    envVars:
+      - key: DEPLOY
+        value: cloud
+      - key: MANAGEMENT_PASSWORD
+        generateValue: true
+      - key: GITSTORE_GIT_URL
+        sync: false
+      - key: GITSTORE_GIT_USERNAME
+        sync: false
+      - key: GITSTORE_GIT_TOKEN
+        sync: false
+      - key: GITSTORE_LOCAL_PATH
+        value: "./auths"
+      - key: GITSTORE_BRANCH
+        value: "main"

@@ -9,7 +9,6 @@ proxypilot-windows
 # Configuration
 config.yaml
 .env
-render.yaml
 
 # Generated content
 bin/*
