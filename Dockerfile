@@ -20,7 +20,7 @@ RUN apk add --no-cache tzdata
 
 RUN mkdir /ProxyPilot
 
-COPY --from=builder ./app/CLIProxyAPIPlus /CLIProxyAPI/CLIProxyAPIPlus
+COPY --from=builder /app/CLIProxyAPIPlus /ProxyPilot/CLIProxyAPIPlus
 
 COPY config.example.yaml /ProxyPilot/config.example.yaml
 
